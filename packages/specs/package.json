@@ -1,16 +1,18 @@
 {
-  "name": "@vriddhi-beckn/core",
+  "name": "@vriddhi-beckn/specs",
   "version": "1.0.0",
   "repository": "git@github.com:Vriddhi-Nepal/vriddhi-beckn.git",
   "author": "vridhhinepal <developers.vriddhinepal@gmail.com>",
   "license": "MIT",
-  "description": "Core specification of Beckn Protocol",
+  "description": "Core specifications of Beckn Protocol",
   "main": "index.js",
   "scripts": {
     "start": "node index.js"
   },
   "keywords": [
     "core",
+    "specs",
+    "specifications",
     "beckn",
     "vriddhi-nepal",
     "vriddhi-beckn"
