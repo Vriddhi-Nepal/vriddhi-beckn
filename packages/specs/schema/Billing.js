@@ -8,7 +8,7 @@ const Person = require("./Person");
 const State = require("./State");
 const Time = require("./Time");
 
-class Agent extends _BecknSchema {
+class Biiling extends _BecknSchema {
   static joiSchema = Joi.object({
     name: Joi.string().required(),
     organization: Organization.joiSchema.required(),
@@ -22,4 +22,4 @@ class Agent extends _BecknSchema {
   }).required();
 }
 
-module.exports = Agent;
+module.exports = Biiling;
