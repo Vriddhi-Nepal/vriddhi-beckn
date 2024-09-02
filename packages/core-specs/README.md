@@ -5,7 +5,7 @@ Core specifications of Beckn. This package will validate the json input or objec
 ## Installation
 
 ```sh
-$ npm i @vridhhi-beckn/core-specs
+$ npm i @vriddhi-beckn/core-specs
 ```
 
 ## Usage
@@ -25,7 +25,7 @@ const image = {
 console.log(schema.image.set(image).get());
 ```
 
-## Output
+### Output
 
 ```json
 {
