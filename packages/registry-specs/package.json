@@ -1,0 +1,20 @@
+{
+  "name": "@vriddhi-beckn/registry-specs",
+  "version": "1.0.0",
+  "repository": "git@github.com:Vriddhi-Nepal/vriddhi-beckn.git",
+  "author": "vridhhinepal <developers.vriddhinepal@gmail.com>",
+  "license": "MIT",
+  "description": "Registry specifications of Beckn Protocol",
+  "main": "index.js",
+  "keywords": [
+    "registry-specs",
+    "specs",
+    "specifications",
+    "beckn",
+    "vriddhi-nepal",
+    "vriddhi-beckn"
+  ],
+  "dependencies": {
+    "@vriddhi-beckn/core-specs": "^1.0.3"
+  }
+}
