@@ -35,3 +35,22 @@ console.log(schema.image.set(image).get());
   "height": "300px"
 }
 ```
+
+## Extend
+
+```
+const becknExtend = require("@vriddhi-beckn/core-specs/extend");
+
+const [FooBar, fooBar] = becknExtend("FooBar", (Joi) => {
+  return Joi.object({
+    message: Joi.string().required(),
+  });
+});
+
+console.log(fooBar instanceof FooBar); // true
+// console.log(fooBar.set({}).get()); // Errors
+console.log(fooBar.set({ message: "Hello, World!" }).get()); // Errors
+
+```
+
+If you want to work with the class itself, use the first item of array provided by the extend function, or you can directly use the object of your class by using the second item of array.
