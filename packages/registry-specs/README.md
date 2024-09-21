@@ -1,0 +1,1 @@
+# @vriddhi-beckn/registry-specs
