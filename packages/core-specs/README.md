@@ -5,7 +5,7 @@ Core specifications of Beckn. This package will validate the json input or objec
 ## Installation
 
 ```sh
-$ npm i @vriddhi-beckn/core-specs
+npm i @vriddhi-beckn/core-specs
 ```
 
 ## Usage
@@ -38,7 +38,7 @@ console.log(schema.image.set(image).get());
 
 ## Extend
 
-```
+```js
 const becknExtend = require("@vriddhi-beckn/core-specs/extend");
 
 const [FooBar, fooBar] = becknExtend("FooBar", (Joi) => {
@@ -50,7 +50,6 @@ const [FooBar, fooBar] = becknExtend("FooBar", (Joi) => {
 console.log(fooBar instanceof FooBar); // true
 // console.log(fooBar.set({}).get()); // Errors
 console.log(fooBar.set({ message: "Hello, World!" }).get()); // Errors
-
 ```
 
 If you want to work with the class itself, use the first item of array provided by the extend function, or you can directly use the object of your class by using the second item of array.

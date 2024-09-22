@@ -7,8 +7,10 @@ class _BecknSchema {
     }
   }
 
-  set(value) {
-    const { error } = this.constructor.joiSchema.validate(value);
+  set(val) {
+    const { error, value } = this.constructor.joiSchema.validate(val, {
+      stripUnknown: true,
+    });
     if (error) throw new Error(error);
 
     this.value = value;
